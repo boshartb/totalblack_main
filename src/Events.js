@@ -1,9 +1,16 @@
 import React, { Component } from "react"
 
+
 class Events extends Component {
     render() {
         return (
-            <h3>UPCOMING EVENTS</h3>
+            <div>
+                <h3>UPCOMING EVENTS</h3>
+                <div className="imgbox">
+                    <img className="center-fit" src="https://assets.bigcartel.com/product_images/229890383/six+year+flier.jpg?auto=format&fit=max&h=1000&w=1000"></img>
+
+                </div>
+            </div>
         )
     }
 }
