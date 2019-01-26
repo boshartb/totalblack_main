@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import AlbumCard from "./AlbumCard"
+
 class Albums extends Component {
 
     constructor(props) {
@@ -29,7 +31,6 @@ class Albums extends Component {
 
         return (
             <div classname="Album">
-
                 <ul>
                     {releases.releases.map(album => (
                         <li key="{album.id}">
@@ -37,6 +38,7 @@ class Albums extends Component {
                         </li>
                     ))}
                 </ul>
+
             </div>
         );
     }
