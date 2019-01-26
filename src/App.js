@@ -8,11 +8,11 @@ import {
 
 import './App.css';
 
-import Events from './Events';
-import Home from './Home';
-import Albums from './Albums';
-import NavBar from './NavBar';
-import Fof from './Fof';
+import Events from './Components/Events';
+import Home from './Components/Home';
+import Albums from './Components/Albums';
+import NavBar from './Components/NavBar';
+import Fof from './Components/Fof';
 
 class App extends Component {
   render() {

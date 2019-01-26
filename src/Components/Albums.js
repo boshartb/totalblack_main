@@ -25,6 +25,8 @@ class Albums extends Component {
         if (!isLoaded) {
             return <div>Loading...</div>;
         }
+
+
         return (
             <div classname="Album">
 
