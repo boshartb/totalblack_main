@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import AlbumCard from "./AlbumCard"
 
 class Albums extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -27,16 +26,15 @@ class Albums extends Component {
         if (!isLoaded) {
             return <div>Loading...</div>;
         }
+        let discog = releases.releases.map(release => (
+            <AlbumCard key="{release.id}" release={release} />
 
+        ))
 
         return (
             <div classname="Album">
                 <ul>
-                    {releases.releases.map(album => (
-                        <li key="{album.id}">
-                            Name: {album.title} | Email: {album.year}
-                        </li>
-                    ))}
+                    {discog}
                 </ul>
 
             </div>
